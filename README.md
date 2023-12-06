@@ -1,14 +1,8 @@
-# Welcome to your CDK TypeScript project
+# TODO
 
-This is a blank project for CDK development with TypeScript.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+- CLI package that connects to websocket and sends messages to a local lambda returning the response on the websocket
+  `live-lambda --function MyFunc my-local-lamba.js`
+  - Needs to be able to fetch the iot websocket URL
+- CDK construct that allows for overriding the lambda function code with the iot router
+  - Or maybe it just replaces the lambda directly?
+  - How to restore the lambda when we are done?
